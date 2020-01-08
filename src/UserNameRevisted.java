@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class UserNameRevisted {
 
@@ -18,7 +19,34 @@ public class UserNameRevisted {
 			bobby
 			Welcome bobby!
 		*/
+		
+		System.out.println("Welcome " + getUserName() + " !");
 
 	}
 
+	public static String getUserName() {
+		
+		System.out.println("Enter a user name:");
+		
+		Scanner input = new Scanner(System.in);
+		String output = input.next(); 
+		
+		while(output.length() < 5) {
+			System.out.println("still not long enough! try again!!!!");	
+			output = input.next(); 
+		}
+		
+		input.close();
+		
+		return output;
+	}
+//
+//	public static boolean checkUserNameLength(String str) {
+//		
+//		if(str.length() < 5) {
+//			return false;
+//		}
+//		return true;
+//	}
+//
 }

@@ -5,8 +5,13 @@ import org.junit.jupiter.api.Test;
 class UserNameRevistedTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void getUserNameTest() {
+		assertEquals("bobby", UserNameRevisted.getUserName());
 	}
+	
+//	@Test
+//	void checkUserNameLenghtTooShort() {
+//		assertEquals(true, UserNameRevisted.checkUserNameLength("bobb"));
+//	}
 
 }
